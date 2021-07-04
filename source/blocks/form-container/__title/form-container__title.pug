@@ -1,0 +1,4 @@
+mixin form-container__title(modifier)
+  if modifier == undefined
+    - modifier = "empty__title";
+  h1.form-container__title&attributes(attributes)!=modifier

@@ -1,0 +1,7 @@
+.form-container__img {
+  @media (max-width: $md - 1px){
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8px;
+  }
+}

@@ -1,0 +1,4 @@
+mixin form-container__secure-level(modifier)
+  if modifier["secureLevel"] == undefined
+    - modifier["secureLevel"] = "empty__secureLevel";
+  .form-container__secure-level&attributes(attributes)!=modifier.secureLevel

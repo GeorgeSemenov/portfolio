@@ -1,0 +1,5 @@
+mixin input__option-language(modifier)
+  if modifier["flag"] == undefined
+    - modifier["flag"] = "empty__flag";
+  option.input__option-language&attributes(attributes)!=modifier
+    .flag

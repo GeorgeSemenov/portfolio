@@ -1,0 +1,24 @@
+@import '../../vendor/nice-select/jquery-nice-select-1.1.0/css/nice-select.css';
+.input__select-languages {
+  width: 116px;
+  margin-left: auto;
+  height: auto;
+  padding-top: 0px;
+  padding-bottom: 1px;
+  @media (max-width: $md - 1px){
+    width: 96px;
+    padding-left: 10px;
+  }
+
+  &:after{
+    right: 20px;
+    top: 48%;
+    @media (max-width: $md - 1px){
+      right: 10px;
+    }
+  }
+  .current{
+    display: block;
+    padding-top: 6px;
+  }
+}
