@@ -1,5 +1,5 @@
 #!/bin/sh
-parentName=header
+parentName=navigation
 read -p "What would you create : " fileName
 mkdir ${fileName}
 isThereNeedPugFile=1
@@ -12,8 +12,8 @@ if [ "$isThereNeedPugFile" -gt "$zero" ]; then
 cat > newFile.pug << end1
 include ${fileName}/${parentName}${fileName}.pug
 end1
-cat header.pug >> newFile.pug
-mv -f newFile.pug  header.pug
+cat navigation.pug >> newFile.pug
+mv -f newFile.pug  navigation.pug
 cat > ${fileName}/${parentName}${fileName}.pug << end2
 mixin ${parentName}${fileName}(modifier)
 ${TAB}.${parentName}${fileName}&attributes(attributes)
@@ -23,8 +23,8 @@ fi
 cat > newFile.scss << end3
 @import '${fileName}/${parentName}${fileName}';
 end3
-cat header.scss >> newFile.scss
-mv -f newFile.scss header.scss
+cat navigation.scss >> newFile.scss
+mv -f newFile.scss navigation.scss
 cd ${fileName}
 cat >> ${parentName}${fileName}.scss << end4
 .${parentName}${fileName} {}

@@ -1,0 +1,10 @@
+include __sign/navigation__sign.pug
+include __item-img/navigation__item-img.pug
+include __item-content/navigation__item-content.pug
+include __item/navigation__item.pug
+include __items-container/navigation__items-container.pug
+include __content/navigation__content.pug
+mixin navigation(modifier)
+  aside.navigation&attributes(attributes)
+    +navigation__content(modifier)
+    

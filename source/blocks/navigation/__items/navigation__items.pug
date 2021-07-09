@@ -1,0 +1,8 @@
+mixin navigation__items(modifier)
+  if modifier["items"] == undefined
+      - modifier["items"] = [{itemContent: "empty items array"}];
+  ul.navigation__items&attributes(attributes)
+    each item in modifier.items
+      if item["modifier"] == undefined
+        - item["modifier"] = "";
+      +navigation__item(item)
