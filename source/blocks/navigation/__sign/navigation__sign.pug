@@ -1,2 +1,4 @@
 mixin navigation__sign(modifier)
+  if modifier["sign"] == undefined
+    - modifier["sign"] = "empty__sign";
   p.navigation__sign&attributes(attributes)!=modifier.sign

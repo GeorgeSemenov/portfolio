@@ -5,9 +5,28 @@ html(lang="ru")
   head
     meta(charset = "utf-8")
     meta(name="viewport", content="initial-scale=1.0, width=device-width")
-    title UIKit
+    title George Semenov portfolio
     //-В папке build будет лежать файл фавикона, строка которая находится ниже позволит подцепить этот файл
     +favicon()
   body
     main
-      
+      +navigation({
+        items: [
+          {
+            itemHref: "#greetings",
+            itemContent: "Приветствие",
+            imgName: "home"
+          },
+          {
+            itemHref: "#about-me",
+            itemContent: "Обо мне",
+            imgName: "person"
+          },
+          {
+            itemHref: "#portfolio",
+            itemContent: "Портфолио",
+            imgName: "bag"
+          }
+        ],
+        sign: "&#169; Created by<br/>George Semenov"
+      })

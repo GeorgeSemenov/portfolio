@@ -1,27 +1,10 @@
 /* no sense variables */
 $transparent: transparent;
 $white: #ffffff;
+$black: #000000;
 
-$gray-lighter: #F8F8F8;
-$gray: #E4E4E4;
-
-$green      : #428A60;
-
-$black      : #212121;
+$gray: #999;
 
 /* variables with sense */
 /* *********************************************************************** */
-$input__label--color : $black;
-$input__input--color : $black;
-$input__label-text_colored_green--color : $green;
-$input__input--border: $gray;
-$input__input--BGColor: $gray-lighter;
-
-$btn--BGColor: $green;
-$btn__text--Color: $white;
-
-$form-container__img-text--Color: $white;
-$form-container__title--Color: $black;
-$form-container__title--BGColor: $gray-lighter;
-$form-container__secure-level-container--Color: $black;
-$form-container__secure-level-container--BGColor: $gray-lighter;
+$navigation__item--Color: $black;
