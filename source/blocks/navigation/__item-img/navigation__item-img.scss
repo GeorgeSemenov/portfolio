@@ -1,1 +1,8 @@
-.navigation__item-img {}
+.navigation__item-img {
+  @include square(16px);
+  display: none;
+  @media (max-width: $md - 1px){
+    display: block;
+    @include square(30px);
+  }
+}

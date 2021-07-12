@@ -1,0 +1,13 @@
+include __contact/greetings-screen__contact.pug
+include __contacts/greetings-screen__contacts.pug
+include __text/greetings-screen__text.pug
+include __title/greetings-screen__title.pug
+include __text-container/greetings-screen__text-container.pug
+include __img-frame/greetings-screen__img-frame.pug
+include __img/greetings-screen__img.pug
+include __img-container/greetings-screen__img-container.pug
+include __content/greetings-screen__content.pug
+mixin greetings-screen(modifier)
+  .greetings-screen&attributes(attributes)
+    +greetings-screen__content(modifier)
+    

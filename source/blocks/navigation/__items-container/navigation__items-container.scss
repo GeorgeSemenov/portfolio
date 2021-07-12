@@ -1,1 +1,8 @@
-.navigation__items-container {}
+.navigation__items-container {
+  margin-bottom: 20px;
+  @media (max-width: $md - 1px){
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 0px;
+  }
+}

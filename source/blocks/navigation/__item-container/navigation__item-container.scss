@@ -1,0 +1,7 @@
+.navigation__item-container {
+  margin-bottom: 10px;
+  &:last-child{ margin-bottom: 0;}
+  @media (max-width: $md - 1px){
+    margin-bottom: 0px;
+  }
+}

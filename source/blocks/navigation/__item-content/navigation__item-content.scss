@@ -1,1 +1,12 @@
-.navigation__item-content {}
+.navigation__item-content {
+  @include transition(0.1s);
+  font-weight: 500;
+  color: $navigation__item-content--Color;
+  &:hover{
+    color: $navigation__item-content-hover--Color;
+    letter-spacing: 2px;
+  }
+  @media (max-width: $md - 1px){
+    display: none;
+  }
+}

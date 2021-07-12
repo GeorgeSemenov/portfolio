@@ -1,0 +1,9 @@
+mixin greetings-screen__img(modifier)
+  picture.greetings-screen__img&attributes(attributes)
+    source(type='image/webp' srcset=require('../../img/myphotoXSAbove.png') media="(min-width: 300px)")
+    source(type='image/webp' srcset=require('../../img/myphotoMDAbove.png') media="(min-width: 767px)")
+    source(type='image/webp' srcset=require('../../img/myphotoXLAbove.png') media="(min-width: 1199px)")
+    img(src=require('../../img/myphotoXLAbove.png') alt="Тут изображенно моё лицо, не пугайтесь.")
+    
+    
+    

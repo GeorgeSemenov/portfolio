@@ -1,3 +1,4 @@
+@import '__item-container/navigation__item-container';
 @import '__sign/navigation__sign';
 @import '__item-img/navigation__item-img';
 @import '__item-content/navigation__item-content';
@@ -10,7 +11,15 @@
   height: 100%;
   width: 30%;
   position: fixed;
+  background-color: $navigation--BGColor;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   @media (max-width: $md - 1px) {
+    align-items: stretch;
     width: 100%;
+    height: auto;
+    @include py(25px);
   }
 }

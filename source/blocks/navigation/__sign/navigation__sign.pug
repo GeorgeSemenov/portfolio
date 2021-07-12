@@ -1,4 +1,7 @@
 mixin navigation__sign(modifier)
   if modifier["sign"] == undefined
     - modifier["sign"] = "empty__sign";
+  if modifier["signBolded"] == undefined
+    - modifier["signBolded"] = "";
   p.navigation__sign&attributes(attributes)!=modifier.sign
+    b!=modifier.signBolded

@@ -1,5 +1,6 @@
 include ../../blocks/favicon/favicon.pug
 include ../../blocks/navigation/navigation.pug
+include ../../blocks/greetings-screen/greetings-screen.pug
 doctype html
 html(lang="ru")
   head
@@ -9,24 +10,26 @@ html(lang="ru")
     //-В папке build будет лежать файл фавикона, строка которая находится ниже позволит подцепить этот файл
     +favicon()
   body
+    +navigation({
+      items: [
+        {
+          itemHref: "#greetings",
+          itemContent: "Приветствие",
+          imgName: "home"
+        },
+        {
+          itemHref: "#about-me",
+          itemContent: "Обо мне",
+          imgName: "person"
+        },
+        {
+          itemHref: "#portfolio",
+          itemContent: "Портфолио",
+          imgName: "bag"
+        }
+      ],
+      sign: "&#169; Created by<br/>",
+      signBolded: "George Semenov"
+    })
     main
-      +navigation({
-        items: [
-          {
-            itemHref: "#greetings",
-            itemContent: "Приветствие",
-            imgName: "home"
-          },
-          {
-            itemHref: "#about-me",
-            itemContent: "Обо мне",
-            imgName: "person"
-          },
-          {
-            itemHref: "#portfolio",
-            itemContent: "Портфолио",
-            imgName: "bag"
-          }
-        ],
-        sign: "&#169; Created by<br/>George Semenov"
-      })
+      +greetings-screen({})

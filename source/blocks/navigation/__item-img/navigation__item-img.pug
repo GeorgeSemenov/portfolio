@@ -1,2 +1,11 @@
+include ../../../img/svg/svg-home.pug
+include ../../../img/svg/svg-person.pug
+include ../../../img/svg/svg-bag.pug
 mixin navigation__item-img(modifier)
-  .navigation__item-img&attributes(attributes)
+  case modifier.imgName
+    when 'home'
+      +svg-home()(class="navigation__item-img")
+    when 'person'
+      +svg-person()(class="navigation__item-img")
+    when 'bag'
+      +svg-bag()(class="navigation__item-img")

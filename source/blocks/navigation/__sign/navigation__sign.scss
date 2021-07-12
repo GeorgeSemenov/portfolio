@@ -1,1 +1,11 @@
-.navigation__sign {}
+.navigation__sign {
+  font-style: italic;
+  color: $navigation__sign--Color;
+
+  b{
+    color: $navigation__sign-bolded--Color;
+  }
+  @media (max-width: $md - 1px){
+    display: none;
+  }
+}
