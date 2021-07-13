@@ -1,2 +1,6 @@
 mixin greetings-screen__contacts(modifier)
+  if modifier["contacts"] == undefined
+    - modifier["contacts"] = [{contactImg: 'emtpy img', contactHref:"#!"}];
   .greetings-screen__contacts&attributes(attributes)
+    each contact in modifier.contacts
+      +greetings-screen__contact(contact)

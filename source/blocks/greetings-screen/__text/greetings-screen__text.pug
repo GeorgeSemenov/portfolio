@@ -1,2 +1,4 @@
 mixin greetings-screen__text(modifier)
-  .greetings-screen__text&attributes(attributes)
+  if modifier["text"] == undefined
+    - modifier["text"] = "empty__text";
+  p.greetings-screen__text&attributes(attributes)!=modifier.text

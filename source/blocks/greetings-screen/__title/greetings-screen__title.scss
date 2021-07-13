@@ -1,1 +1,13 @@
-.greetings-screen__title {}
+.greetings-screen__title {
+  font-size: 55px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+  span{
+    color: $greetings-screen__title-colored--color;
+  }
+
+  @media (max-width: $md - 1px){
+    font-size: 40px;
+  }
+}

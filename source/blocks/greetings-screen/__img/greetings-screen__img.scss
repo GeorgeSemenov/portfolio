@@ -1,1 +1,9 @@
-.greetings-screen__img {}
+.greetings-screen__img {
+  @include square(90%);
+  img{
+    position: relative;
+    z-index: 1;
+    @include square(100%);
+    border-radius: 20px;
+  }
+}

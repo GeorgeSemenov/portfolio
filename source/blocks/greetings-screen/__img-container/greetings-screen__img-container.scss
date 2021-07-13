@@ -1,1 +1,14 @@
-.greetings-screen__img-container {}
+.greetings-screen__img-container {
+  @include square(300px);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media (max-width: $xl - 1px){
+    @include square(200px);
+  }
+  @media (max-width: $md - 1px){
+    @include square(100px);
+  }
+}

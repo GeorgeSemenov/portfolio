@@ -1,1 +1,7 @@
-.greetings-screen__img-frame {}
+.greetings-screen__img-frame {
+  background: $greetings-screen__img-frame--BGColor;
+  position: absolute;
+  width: 160%;
+  height: 70%;
+  transform: rotate(45deg);
+}

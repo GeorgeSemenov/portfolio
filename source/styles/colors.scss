@@ -4,8 +4,11 @@ $transparent: transparent;
 $white: #ffffff;
 $black: #000000;
 
+$gray-lighter: #f8f8f8;
 $gray: #999;
 $gray-darker: #767676;
+
+$yellow: #ffb400;
 /* variables with sense */
 /* *********************************************************************** */
 $navigation--BGColor: $white;
@@ -14,3 +17,8 @@ $navigation__item-content--Color: $gray-darker;
 $navigation__item--underlineColor: $gray-darker;
 $navigation__sign--Color: $gray;
 $navigation__sign-bolded--Color: $gray-darker;
+
+$greetings-screen--BGColor: $gray-lighter;
+$greetings-screen__img-frame--BGColor: $yellow;
+$greetings-screen__title-colored--color: $yellow;
+$greetings-screen__text--Color: $gray-darker;

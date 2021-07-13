@@ -1,2 +1,5 @@
 mixin greetings-screen__contact(modifier)
-  .greetings-screen__contact&attributes(attributes)
+  if modifier["contactHref"] == undefined
+    - modifier["contactHref"] = "#!";
+  a.greetings-screen__contact(href=modifier.contactHref)&attributes(attributes)
+    +greetings-screen__contact-img(modifier)

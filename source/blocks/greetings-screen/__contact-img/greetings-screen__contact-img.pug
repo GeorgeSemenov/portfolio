@@ -1,0 +1,6 @@
+mixin greetings-screen__contact-img(modifier)
+  case modifier.contactImg
+    when 'gmail'
+      img.greetings-screen__contact-img(src=require('../../img/gmail.png') alt="gmail icon")&attributes(attributes)
+    when 'phone' 
+      img.greetings-screen__contact-img(src=require('../../img/phone.png') alt="phone icon")&attributes(attributes)

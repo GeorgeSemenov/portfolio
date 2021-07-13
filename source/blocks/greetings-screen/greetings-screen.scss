@@ -1,3 +1,4 @@
+@import '__contact-img/greetings-screen__contact-img';
 @import '__contact/greetings-screen__contact';
 @import '__contacts/greetings-screen__contacts';
 @import '__text/greetings-screen__text';
@@ -7,4 +8,12 @@
 @import '__img/greetings-screen__img';
 @import '__img-container/greetings-screen__img-container';
 @import '__content/greetings-screen__content';
-.greetings-screen {}
+.greetings-screen {
+  font-family: 'Montserrat' ,"Arial" , "Sans-serif";
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: $greetings-screen--BGColor;
+}

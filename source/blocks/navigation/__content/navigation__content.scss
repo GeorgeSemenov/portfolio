@@ -1,7 +1,16 @@
 .navigation__content {
-  // display: flex;
-  // flex-direction: column;
+  position: fixed;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
-  // margin-left: auto;
-  // margin-right: auto;
+  @media (max-width: $md - 1px){
+    position: static;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-around;
+    display: block;
+  }
 }
