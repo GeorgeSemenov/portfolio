@@ -1,1 +1,3 @@
-.greetings-screen__contact-img {}
+.greetings-screen__contact-img {
+  @include square(40px);
+}

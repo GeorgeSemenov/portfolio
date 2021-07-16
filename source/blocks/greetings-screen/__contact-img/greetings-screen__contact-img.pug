@@ -1,6 +1,19 @@
+include ../../../img/svg/viber.pug
+include ../../../img/svg/whatsapp.pug
+include ../../../img/svg/telegram.pug
+include ../../../img/svg/gmail.pug
+include ../../../img/svg/phone.pug
 mixin greetings-screen__contact-img(modifier)
   case modifier.contactImg
     when 'gmail'
-      img.greetings-screen__contact-img(src=require('../../img/gmail.png') alt="gmail icon")&attributes(attributes)
+      +gmail(modifier)(class="greetings-screen__contact-img")
     when 'phone' 
-      img.greetings-screen__contact-img(src=require('../../img/phone.png') alt="phone icon")&attributes(attributes)
+      +phone(modifier)(class="greetings-screen__contact-img")
+    when 'viber' 
+      +viber(modifier)(class="greetings-screen__contact-img")
+    when 'telegram' 
+      +telegram(modifier)(class="greetings-screen__contact-img")
+    when 'whatsapp' 
+      +whatsapp(modifier)(class="greetings-screen__contact-img")
+    default
+      span="Изображений нет или введено неправильное contact-img"
