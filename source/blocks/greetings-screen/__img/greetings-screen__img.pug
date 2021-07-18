@@ -1,9 +1,10 @@
 mixin greetings-screen__img(modifier)
   picture.greetings-screen__img&attributes(attributes)
-    source(type='image/webp' srcset=require('../../img/myphotoXLAbove.png') media="(min-width: 1199px)")
-    source(type='image/webp' srcset=require('../../img/myphotoMDAbove.png') media="(min-width: 767px)")
-    source(type='image/webp' srcset=require('../../img/myphotoXSAbove.png') media="(min-width: 300px)")
-    img(src=require('../../img/myphotoXLAbove.png') alt="Тут изображенно моё лицо, не пугайтесь.")
+    source(type='image/webp' srcset=require('../../img/onlyMyFaceMDAboveCompressed.webp') media="(min-width: 767px)")
+    source(type='image/webp' srcset=require('../../img/onlyMyFaceMDAboveCompressed.png') media="(min-width: 767px)")
+    source(type='image/webp' srcset=require('../../img/onlyMyFaceXSAboveCompressed.webp') media="(min-width: 300px)")
+    source(type='image/webp' srcset=require('../../img/onlyMyFaceXSAboveCompressed.png') media="(min-width: 300px)")
+    img(src=require('../../img/onlyMyFaceXSAboveCompressed.png') alt="Тут изображенно моё лицо, не пугайтесь." width="180" height="180")
     
     
     
