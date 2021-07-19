@@ -1,1 +1,8 @@
-.greetings-screen__text-container {}
+.greetings-screen__text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  @media (max-width: $md - 1px){
+    align-items: center;
+  }
+}

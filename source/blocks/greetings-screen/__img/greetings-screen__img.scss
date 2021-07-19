@@ -3,6 +3,7 @@
   display: flex;
   justify-content: center;
   img{
+    @include square(auto);
     position: relative;
     z-index: 1;
     border-radius: 20px;

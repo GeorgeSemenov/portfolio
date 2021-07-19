@@ -5,10 +5,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-right: 20px;
   @media (max-width: $xl - 1px){
     @include square(200px);
   }
   @media (max-width: $md - 1px){
-    @include square(100px);
+    margin-right: 0px;
+    margin-bottom: 15px;
   }
 }

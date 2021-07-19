@@ -1,1 +1,8 @@
-.greetings-screen__content {}
+.greetings-screen__content {
+  display: flex;
+  @include px(15px);
+  @media (max-width: $md - 1px){
+    flex-direction: column;
+    align-items: center;
+  }
+}

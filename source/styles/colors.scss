@@ -9,6 +9,7 @@ $gray: #999;
 $gray-darker: #767676;
 
 $yellow: #ffb400;
+$yellow-darker: #d89900;
 /* variables with sense */
 /* *********************************************************************** */
 $navigation--BGColor: $white;
@@ -22,3 +23,5 @@ $greetings-screen--BGColor: $gray-lighter;
 $greetings-screen__img-frame--BGColor: $yellow;
 $greetings-screen__title-colored--color: $yellow;
 $greetings-screen__text--Color: $gray-darker;
+$greetings-screen__contact-img-hover--Color: $yellow;
+$greetings-screen__contact-img-active--Color: $yellow-darker;

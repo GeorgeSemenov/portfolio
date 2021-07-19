@@ -1,1 +1,7 @@
-.greetings-screen__contact {}
+.greetings-screen__contact {
+  margin-right: 15px;
+  &:last-child{
+    margin-right: 0px;
+  }
+}
+
