@@ -1,4 +1,6 @@
 mixin navigation__item(modifier)
-  .navigation__item&attributes(attributes)
+  if modifier["target"] == undefined
+    - modifier["target"] = "";
+  .navigation__item(data-target=modifier.target)&attributes(attributes)
     +navigation__item-content(modifier)
     +navigation__item-img(modifier)

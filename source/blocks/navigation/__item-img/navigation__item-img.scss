@@ -6,3 +6,11 @@
     @include square(30px);
   }
 }
+
+.active{
+  .navigation__item-img{
+    g{
+      fill: $navigation__item-img_active;
+    }
+  }
+}

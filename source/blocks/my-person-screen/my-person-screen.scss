@@ -1,0 +1,15 @@
+@import '__bio-value/my-person-screen__bio-value';
+@import '__bio-name/my-person-screen__bio-name';
+@import '__bio-field/my-person-screen__bio-field';
+@import '__BIO/my-person-screen__BIO';
+@import '__CV-button/my-person-screen__CV-button';
+@import '__text/my-person-screen__text';
+@import '__title/my-person-screen__title';
+@import '__about-me/my-person-screen__about-me';
+@import '__text-container/my-person-screen__text-container';
+@import '__img/my-person-screen__img';
+.my-person-screen {
+  min-height: 100vh;
+  display: none;
+  font-family: 'Montserrat' ,"Arial" , "Sans-serif";
+}

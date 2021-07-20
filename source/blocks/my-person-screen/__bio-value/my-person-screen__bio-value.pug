@@ -1,0 +1,4 @@
+mixin my-person-screen__bio-value(modifier)
+  if modifier["bioValue"] == undefined
+    - modifier["bioValue"] = "empty__bioValue";
+  p.my-person-screen__bio-value&attributes(attributes)!=modifier.bioValue

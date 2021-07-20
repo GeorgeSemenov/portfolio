@@ -1,0 +1,5 @@
+mixin my-person-screen__bio-name(modifier)
+  if modifier["bioName"] == undefined
+    - modifier["bioName"] = "empty__bioName";
+  p.my-person-screen__bio-name&attributes(attributes)!=modifier.bioName
+

@@ -2,6 +2,11 @@
   position: relative;
   display: inline-block;
   padding-bottom: 5px;
+  cursor: pointer;
+  &:hover{
+    color: $navigation__item-content-hover--Color;
+    letter-spacing: 2px;
+  }
 
   &:after{
     content: '';
@@ -21,5 +26,15 @@
   }
 
   @media (max-width: $md - 1px){
+  }
+
+  &.active:after{
+    content: '';
+    left: 0;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    background: $navigation__item--underlineColor;
+    bottom: 0;
   }
 }

@@ -1,6 +1,8 @@
 include ../../blocks/favicon/favicon.pug
 include ../../blocks/navigation/navigation.pug
 include ../../blocks/greetings-screen/greetings-screen.pug
+include ../../blocks/my-person-screen/my-person-screen.pug
+include ../../blocks/portfolio-screen/portfolio-screen.pug
 doctype html
 html(lang="ru")
   head
@@ -15,17 +17,21 @@ html(lang="ru")
         {
           itemHref: "#greetings",
           itemContent: "Приветствие",
-          imgName: "home"
+          imgName: "home",
+          target: "greetingsScreen",
+          modifier: 'active'
         },
         {
           itemHref: "#about-me",
           itemContent: "Обо мне",
-          imgName: "person"
+          imgName: "person",
+          target: "myPersonScreen"
         },
         {
           itemHref: "#portfolio",
           itemContent: "Портфолио",
-          imgName: "bag"
+          imgName: "bag",
+          target: "portfolioScreen"
         }
       ],
       sign: "&#169; Created by<br/>",
@@ -59,5 +65,29 @@ html(lang="ru")
           }
         ]
       })
+      +my-person-screen({
+        title:"О себе",
+        text: "Закончил Сыктывкарский государственный университет по специальности радиофизика и электроника, там познакомился с программированием. После университета решил углубиться в web разработку.",
+        bios:[
+          {
+            bioName:"Дата рождения",
+            bioValue: "01.08.1989",
+          },
+          {
+            bioName:"Адрес",
+            bioValue: "РФ, г.Сыктывкар",
+          },
+          {
+            bioName:"ВУЗ",
+            bioValue: "Сыктывкарский государственный унивеситет",
+          },
+          {
+            bioName:"Знание языков",
+            bioValue: "Английский, на уровне чтения тех. литературы",
+          }
+        ],
+        CVbuttonText: "Скачать CV"
+      })
+      +portfolio-screen({})
       //-
         Все иконки были скачаны с ресурса - flaticon.com 

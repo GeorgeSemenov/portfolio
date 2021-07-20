@@ -5,4 +5,4 @@ mixin navigation__items(modifier)
     each item in modifier.items
       if item["modifier"] == undefined
         - item["modifier"] = "";
-      +navigation__item(item)
+      +navigation__item(item)(class=item.modifier)
