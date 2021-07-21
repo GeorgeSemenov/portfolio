@@ -1,0 +1,10 @@
+mixin portfolio-screen__examples-of-work(modifier)
+  if modifier["works"] == undefined
+    - modifier["works"] = [{}];
+  .portfolio-screen__examples-of-work&attributes(attributes)
+    each work in modifier.works
+      if work["mark"] == undefined
+        - work["mark"] = "empty__mark";
+      if work["modifier"] == undefined
+        - work["modifier"] = "";
+      +portfolio-screen__example-container(work)(class=work.modifier data-mark=work.mark)

@@ -1,0 +1,8 @@
+mixin portfolio-screen__control(modifier)
+  if modifier["buttons"] == undefined
+    - modifier["buttons"] = [{}];
+  .portfolio-screen__control&attributes(attributes)
+    each button in modifier.buttons
+      if button["modifier"] == undefined
+        - button["modifier"] = "";
+      +portfolio-screen__button(button)(class=button.modifier)

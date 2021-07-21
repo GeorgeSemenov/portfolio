@@ -1,0 +1,6 @@
+mixin portfolio-screen__button(modifier)
+  if modifier["selector"] == undefined
+    - modifier["selector"] = "empty__selector";
+  if modifier["buttonText"] == undefined
+    - modifier["buttonText"] = "empty__buttonText";
+  button.portfolio-screen__button(type="button" data-selector=modifier.selector)&attributes(attributes)!=modifier.buttonText

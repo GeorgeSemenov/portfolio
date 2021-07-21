@@ -1,0 +1,8 @@
+.my-person-screen__content {
+  width: 760px;
+  @media (max-width: $md - 1px){
+    width: 100%;
+    @include px(15px);
+    padding-bottom: 50px;
+  }
+}

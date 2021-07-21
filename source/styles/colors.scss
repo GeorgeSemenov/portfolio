@@ -23,11 +23,18 @@ $navigation__sign--Color: $gray;
 $navigation__sign-bolded--Color: $gray-darker;
 
 $greetings-screen--BGColor: $gray-lighter;
+$my-person-screen--Color: $gray-darker;
 $greetings-screen__img-frame--BGColor: $yellow;
 $greetings-screen__title-colored--color: $yellow;
 $greetings-screen__text--Color: $gray-darker;
 $greetings-screen__contact-img-hover--Color: $yellow;
 $greetings-screen__contact-img-active--Color: $yellow-darker;
-$my-person-screen__text--Color: $gray-darker;
 $my-person-screen__title--Color: $black;
 $my-person-screen__CV-button--Color: $white;
+$my-person-screen__CV-button--BGColor: $black;
+$my-person-screen__CV-button-hover--BGColor: $yellow;
+$my-person-screen__bio-name--Color: $black;
+
+$portfolio-screen--Color: $gray-darker;
+$portfolio-screen__title--Color: $black;
+$portfolio-screen__button-hover--Color: darken($gray-darkest,10%);

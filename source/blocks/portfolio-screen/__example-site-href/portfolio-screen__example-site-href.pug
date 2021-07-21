@@ -1,0 +1,4 @@
+mixin portfolio-screen__example-site-href(modifier)
+  if modifier["exampleSiteHref"] == undefined
+    - modifier["exampleSiteHref"] = "#!";
+  a.portfolio-screen__example-site-href(href=modifier.exampleSiteHref)&attributes(attributes)

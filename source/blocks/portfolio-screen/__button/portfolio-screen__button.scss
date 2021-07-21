@@ -1,0 +1,11 @@
+.portfolio-screen__button {
+  margin-right: 15px;
+  @include transition();
+  &:hover{
+    letter-spacing: 1.5px;
+    color: $portfolio-screen__button-hover--Color;
+  }
+  &:last-child{
+    margin-right: 0px;
+  }
+}

@@ -1,1 +1,6 @@
-.my-person-screen__text-container {}
+.my-person-screen__text-container {
+  display: flex;
+  @media (max-width: $md - 1px){
+    flex-direction: column;
+  }
+}

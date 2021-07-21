@@ -1,2 +1,14 @@
+include __example-site-href/portfolio-screen__example-site-href.pug
+include __example-git-href/portfolio-screen__example-git-href.pug
+include __example-hrefs/portfolio-screen__example-hrefs.pug
+include __example-background/portfolio-screen__example-background.pug
+include __example-container/portfolio-screen__example-container.pug
+include __examples-of-work/portfolio-screen__examples-of-work.pug
+include __button/portfolio-screen__button.pug
+include __control/portfolio-screen__control.pug
+include __title/portfolio-screen__title.pug
+include __header/portfolio-screen__header.pug
+include __content/portfolio-screen__content.pug
 mixin portfolio-screen(modifier)
   .portfolio-screen#portfolioScreen&attributes(attributes)
+    +portfolio-screen__content(modifier)

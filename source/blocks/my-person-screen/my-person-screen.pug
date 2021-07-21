@@ -1,3 +1,4 @@
+include __content/my-person-screen__content.pug
 include __bio-value/my-person-screen__bio-value.pug
 include __bio-name/my-person-screen__bio-name.pug
 include __bio-field/my-person-screen__bio-field.pug
@@ -10,5 +11,4 @@ include __text-container/my-person-screen__text-container.pug
 include __img/my-person-screen__img.pug
 mixin my-person-screen(modifier)
   .my-person-screen#myPersonScreen&attributes(attributes)
-    +my-person-screen__img(modifier)
-    +my-person-screen__text-container(modifier)
+    +my-person-screen__content(modifier)

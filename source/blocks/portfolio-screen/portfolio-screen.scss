@@ -1,5 +1,19 @@
+@import '__example-site-href/portfolio-screen__example-site-href';
+@import '__example-git-href/portfolio-screen__example-git-href';
+@import '__example-hrefs/portfolio-screen__example-hrefs';
+@import '__example-background/portfolio-screen__example-background';
+@import '__example-container/portfolio-screen__example-container';
+@import '__examples-of-work/portfolio-screen__examples-of-work';
+@import '__button/portfolio-screen__button';
+@import '__control/portfolio-screen__control';
+@import '__title/portfolio-screen__title';
+@import '__header/portfolio-screen__header';
+@import '__content/portfolio-screen__content';
 .portfolio-screen {
   min-height: 100vh;
-  background-color: purple;
-  display: none;
+  display: flex;
+  font-family: 'Montserrat' ,"Arial" , "Sans-serif";
+  justify-content: center;
+  align-items: center;
+  color: $portfolio-screen--Color;
 }

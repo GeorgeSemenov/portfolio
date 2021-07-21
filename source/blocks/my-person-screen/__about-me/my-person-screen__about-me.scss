@@ -1,1 +1,5 @@
-.my-person-screen__about-me {}
+.my-person-screen__about-me {
+  @media (max-width: $md - 1px){
+    margin-bottom: 25px;
+  }
+}

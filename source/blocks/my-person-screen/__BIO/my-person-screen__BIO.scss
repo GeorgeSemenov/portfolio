@@ -1,1 +1,7 @@
-.my-person-screen__BIO {}
+.my-person-screen__BIO {
+  width: 50%;
+  flex-shrink: 0;
+  @media (max-width: $md - 1px){
+    width: 100%;
+  }
+}
