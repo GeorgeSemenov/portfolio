@@ -1,1 +1,10 @@
-.portfolio-screen__example-container {}
+.portfolio-screen__example-container {
+  border-radius: 10px;
+  overflow: hidden;
+  width: 340px;
+  height: 200px;
+  position: relative;
+  @media (max-width: $md - 1px){
+    width: 310px;
+  }
+}

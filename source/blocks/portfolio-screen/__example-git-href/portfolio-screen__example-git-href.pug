@@ -1,4 +1,6 @@
+include ../../../img/svg/gihub.pug
 mixin portfolio-screen__example-git-href(modifier)
   if modifier["exampleGitHref"] == undefined
     - modifier["exampleGitHref"] = "#!";
   a.portfolio-screen__example-git-href(href=modifier.exampleGitHref)&attributes(attributes)
+    +gihub(modifier)(class="portfolio-screen__example-href-img");

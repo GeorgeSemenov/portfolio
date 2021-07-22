@@ -9,6 +9,8 @@ $gray: #999;
 $gray-darker: #767676;
 $gray-darkest: #5e5e5e;
 
+$green: #72b626;
+
 $yellow: #ffb400;
 $yellow-darker: #d89900;
 /* variables with sense */
@@ -38,3 +40,5 @@ $my-person-screen__bio-name--Color: $black;
 $portfolio-screen--Color: $gray-darker;
 $portfolio-screen__title--Color: $black;
 $portfolio-screen__button-hover--Color: darken($gray-darkest,10%);
+$portfolio-screen__example-hrefs--BGColor: $green;
+$portfolio-screen__example-href-img-hover: $yellow;
