@@ -1,3 +1,7 @@
 .portfolio-screen__control {
-
+  display: flex;
+  justify-content: space-between;
+  @media (max-width: $md - 1px){
+    flex-direction: column;
+  }
 }

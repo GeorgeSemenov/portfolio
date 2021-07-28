@@ -1,2 +1,8 @@
 .portfolio-screen__content {
+  width: 90%;
+  @include px(15px);
+  @media (max-width: $md - 1px){
+    @include px(10px);
+    width: 100%;
+  }
 }

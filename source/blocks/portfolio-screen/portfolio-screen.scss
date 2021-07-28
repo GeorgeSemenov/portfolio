@@ -1,3 +1,4 @@
+$example-of-work-width: 450px;
 @import '__example-href-img/portfolio-screen__example-href-img';
 @import '__example-site-href/portfolio-screen__example-site-href';
 @import '__example-git-href/portfolio-screen__example-git-href';
@@ -14,7 +15,11 @@
   min-height: 100vh;
   display: flex;
   font-family: 'Montserrat' ,"Arial" , "Sans-serif";
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   color: $portfolio-screen--Color;
+  padding-top: 50px;
+  @media (max-width: $md - 1px){
+    padding-top: 15px;
+  }
 }

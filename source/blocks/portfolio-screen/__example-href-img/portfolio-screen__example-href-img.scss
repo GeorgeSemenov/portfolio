@@ -1,8 +1,13 @@
 .portfolio-screen__example-href-img {
   @include square(100%);
-  path{
-    &:hover{
+  &:hover{
+    path{
       fill: $portfolio-screen__example-href-img-hover;
+    }
+  }
+  &:active{
+    path{
+      fill: darken($portfolio-screen__example-href-img-hover,10%);
     }
   }
 }

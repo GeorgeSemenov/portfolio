@@ -1,5 +1,27 @@
 .portfolio-screen__example-background {
-  background-color: red;
+  display: inline-block;
   width: 100%;
   height: 100%;
+  background-size: cover;
+  @media (max-width: $md - 1px){
+    width: $example-of-work-width*2/3;
+    height: ($example-of-work-width*200/340)*2/3;
+    border-radius: 10px;
+  }
+}
+
+.portfolio-screen__example-container_img_afrianska{
+  .portfolio-screen__example-background {
+    background-image: url("../../img/site-img-afrianca.png");
+  }
+}
+.portfolio-screen__example-container_img_hungry-people{
+  .portfolio-screen__example-background {
+    background-image: url("../../img/site-img-hungry-people.png");
+  }
+}
+.portfolio-screen__example-container_img_ANKOTest{
+  .portfolio-screen__example-background {
+    background-image: url("../../img/site-img-electrica.png");
+  }
 }
