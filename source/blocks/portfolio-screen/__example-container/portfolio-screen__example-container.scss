@@ -9,4 +9,15 @@
   @media (max-width: $md - 1px){
     @include square(auto);
   }
+
+  &:hover{
+    @media (min-width: $md){
+      .portfolio-screen__example-hrefs{
+        -moz-transition: all .25s ease 0s;
+        -webkit-transition: all .25s ease 0s;
+        -o-transition: all .25s ease 0s;
+        transition: all .25s ease 0s;
+      }
+    }
+  }
 }
