@@ -64,7 +64,7 @@ html(lang="ru")
             contactImg: "whatsapp"
           }
         ]
-      })
+      })(data-visible='true')
       +my-person-screen({
         title:"О себе",
         text: "Закончил Сыктывкарский государственный университет по специальности радиофизика и электроника, там познакомился с программированием. После университета решил углубиться в web разработку.",
@@ -94,11 +94,12 @@ html(lang="ru")
         buttons:[
           {
             buttonText:"все",
-            selector: 'all'
+            selector: 'all',
+            modifier: "portfolio-screen__button_active"
           },
           {
             buttonText:"многостраничники",
-            selector: 'manyPages'
+            selector: 'multyPages'
           },
           {
             buttonText:"лэндинги",
@@ -124,13 +125,7 @@ html(lang="ru")
             modifier:"portfolio-screen__example-container_img_hungry-people",
             mark: 'landing',
           },
-          {
-            exampleSiteHref: "http://1100120.hostronavt.ru/hunger/",
-            exampleGitHref:"https://github.com/GeorgeSemenov/hunger",
-            modifier:"portfolio-screen__example-container_img_hungry-people",
-            mark: 'landing',
-          },
         ]
-      })(data-visible='true')
+      })
       //-
         Все иконки были скачаны с ресурса - flaticon.com 

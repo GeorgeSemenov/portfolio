@@ -17,6 +17,7 @@
   justify-content: center;
   flex-shrink: 0;
   @media (max-width: $md - 1px) {
+    z-index: 2;
     position: fixed;
     min-height: auto;
     align-items: stretch;

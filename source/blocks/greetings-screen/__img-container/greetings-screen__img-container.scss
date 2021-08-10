@@ -1,5 +1,7 @@
 .greetings-screen__img-container {
   @include square(300px);
+  flex-shrink: 0;
+  flex-grow: 0;
   position: relative;
   overflow: hidden;
   display: flex;

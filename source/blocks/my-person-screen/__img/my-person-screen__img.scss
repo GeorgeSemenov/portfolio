@@ -8,6 +8,7 @@
     @include mx(auto);
     @media (max-width: $md - 1px){
       width: 100%;
+      max-height: none;
     }
   }
 }

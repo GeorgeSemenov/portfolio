@@ -41,5 +41,6 @@ $my-person-screen__bio-name--Color: $black;
 $portfolio-screen--Color: $gray-darker;
 $portfolio-screen__title--Color: $black;
 $portfolio-screen__button-hover--Color: darken($gray-darkest,10%);
+$portfolio-screen__button_active--Color : $portfolio-screen__button-hover--Color;
 $portfolio-screen__example-hrefs--BGColor: $green;
 $portfolio-screen__example-href-img-hover: $yellow;

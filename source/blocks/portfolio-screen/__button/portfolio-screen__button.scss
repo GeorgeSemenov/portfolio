@@ -1,4 +1,5 @@
 .portfolio-screen__button {
+  position: relative;
   margin-right: 15px;
   @include transition();
   &:hover{
@@ -8,11 +9,31 @@
   &:last-child{
     margin-right: 0px;
   }
+  &:after{
+    content: '';
+    left: 50%;
+    width: 0;
+    height: 2px;
+    position: absolute;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    background: $navigation__item--underlineColor;
+    bottom: 0;
+  }
   @media (max-width: $md - 1px){
     margin-bottom: 20px;
     margin-right: 0px;
     &:last-child{
       margin-bottom:0px;
+    }
+  }
+
+  &_active{
+    color: $portfolio-screen__button_active--Color;
+    letter-spacing: 1.5px;
+    font-weight: 500;
+    &:after{
+      width: 100%;
+      left: 0;
     }
   }
 }
