@@ -26,23 +26,25 @@ function handler(node,isMouseMovingFromOutside=true){
   //   square.left(${square.left}), square.top(${square.top}), offset(${$(node).offset().top})`);
   //нужно сравнивать процентные соотношения, т.к. в простых числах сравнения будут неверны
   //Если производить круговые движения, то выезжание бэка даст сбой.
-  if( Math.abs(center.x - dx)/center.x > Math.abs(center.y - dy)/center.y){
-    if(dx > center.x){
-      //console.log(`right side`);
-      isMouseMovingFromOutside ? moveFromRightSide(node) : moveToRightSide(node);
-    }
-    else{
-      //console.log(`left side`);
-      isMouseMovingFromOutside ? moveFromLeftSide(node): moveToLeftSide(node);
-    }
-  }else{
-    if(dy > center.y){
-      //console.log(`bottom side`);
-      isMouseMovingFromOutside ? moveFromBottomSide(node) : moveToBottomSide(node);
-    }
-    else{
-      //console.log(`top side`);
-      isMouseMovingFromOutside ? moveFromTopSide(node) : moveToTopSide(node);
+  if($(window).width() > 1199){
+    if( Math.abs(center.x - dx)/center.x > Math.abs(center.y - dy)/center.y){
+      if(dx > center.x){
+        //console.log(`right side`);
+        isMouseMovingFromOutside ? moveFromRightSide(node) : moveToRightSide(node);
+      }
+      else{
+        //console.log(`left side`);
+        isMouseMovingFromOutside ? moveFromLeftSide(node): moveToLeftSide(node);
+      }
+    }else{
+      if(dy > center.y){
+        //console.log(`bottom side`);
+        isMouseMovingFromOutside ? moveFromBottomSide(node) : moveToBottomSide(node);
+      }
+      else{
+        //console.log(`top side`);
+        isMouseMovingFromOutside ? moveFromTopSide(node) : moveToTopSide(node);
+      }
     }
   }
 }

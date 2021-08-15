@@ -13,9 +13,6 @@
   &:hover{
     @media (min-width: $xl){
       .portfolio-screen__example-hrefs{
-        -moz-transition: all .25s ease 0s;
-        -webkit-transition: all .25s ease 0s;
-        -o-transition: all .25s ease 0s;
         transition: all .25s ease 0s;
       }
     }

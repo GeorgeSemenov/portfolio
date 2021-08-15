@@ -1,6 +1,4 @@
 mixin navigation__item-content(modifier)
-  if modifier["itemHref"] == undefined
-    - modifier["itemHref"] = "#!";
   if modifier["itemContent"] == undefined
     - modifier["itemContent"] = "empty__itemContent";
-  a.navigation__item-content(href=modifier.itemHref)&attributes(attributes)!=modifier.itemContent
+  span.navigation__item-content&attributes(attributes)!=modifier.itemContent

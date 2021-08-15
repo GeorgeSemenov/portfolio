@@ -1,6 +1,8 @@
 mixin navigation__item(modifier)
   if modifier["target"] == undefined
     - modifier["target"] = "";
-  .navigation__item(data-target=modifier.target)&attributes(attributes)
+  if modifier["itemHref"] == undefined
+    - modifier["itemHref"] = "#!";
+  a.navigation__item(data-target=modifier.target href=modifier.itemHref)&attributes(attributes)
     +navigation__item-content(modifier)
     +navigation__item-img(modifier)

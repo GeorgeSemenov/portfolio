@@ -1,7 +1,9 @@
 .portfolio-screen__control {
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
   @media (max-width: $md - 1px){
     flex-direction: column;
+    align-items: center;
   }
 }
