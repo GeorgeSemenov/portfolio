@@ -1,7 +1,9 @@
 include ../../../img/svg/svg-home.pug
 include ../../../img/svg/svg-person.pug
+include ../../../img/svg/skills-and-services.pug
 include ../../../img/svg/svg-bag.pug
 mixin navigation__item-img(modifier)
+  +skillsAndServices()(class="navigation__item-img")
   case modifier.imgName
     when 'home'
       +svg-home()(class="navigation__item-img")
@@ -9,3 +11,4 @@ mixin navigation__item-img(modifier)
       +svg-person()(class="navigation__item-img")
     when 'bag'
       +svg-bag()(class="navigation__item-img")
+    //- when 'skillsAndServices'

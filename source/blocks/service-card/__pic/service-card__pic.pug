@@ -1,0 +1,13 @@
+include ../../../img/svg/frontEnd.pug
+include ../../../img/svg/support.pug
+include ../../../img/svg/wordpress.pug
+mixin service-card__pic(modifier)
+  if modifier["imgName"] == undefined
+    span!="service-card__pic imgName isn't passed"
+  case modifier.imgName
+    when "wordpress"
+      +wordpress(class="service-card__pic")
+    when  'support'
+      +support(class="service-card__pic")
+    when  'frontEnd'
+      +frontEnd(class="service-card__pic")

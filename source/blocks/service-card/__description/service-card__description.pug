@@ -1,0 +1,4 @@
+mixin service-card__description(modifier)
+  if modifier["description"] == undefined
+    - modifier["description"] = "empty__desc";
+  p.service-card__description&attributes(attributes)!=modifier.description

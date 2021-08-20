@@ -1,8 +1,9 @@
 include ../../blocks/favicon/favicon.pug
 include ../../blocks/navigation/navigation.pug
-include ../../blocks/greetings-screen/greetings-screen.pug
-include ../../blocks/my-person-screen/my-person-screen.pug
-include ../../blocks/portfolio-screen/portfolio-screen.pug
+//- include ../../blocks/greetings-screen/greetings-screen.pug
+//- include ../../blocks/my-person-screen/my-person-screen.pug
+include ../../blocks/skillsAndServices/skillsAndServices.pug
+//- include ../../blocks/portfolio-screen/portfolio-screen.pug
 doctype html
 html(lang="ru")
   head
@@ -28,6 +29,12 @@ html(lang="ru")
           target: "myPersonScreen"
         },
         {
+          itemHref: "#skillsAndServices",
+          itemContent: "Навыки и умения",
+          imgName: "skillsAndServices",
+          target: "skillsAndServices"
+        },
+        {
           itemHref: "#portfolio",
           itemContent: "Портфолио",
           imgName: "bag",
@@ -38,7 +45,7 @@ html(lang="ru")
       signBolded: "George Semenov"
     })
     main
-      +greetings-screen({
+      //- +greetings-screen({
         title: "Семенов ",
         titleColored: "Георгий",
         text: "Начинающий фронтэнд разработчик, верстальщик. Стремящийся  развить свои навыки.",
@@ -63,9 +70,9 @@ html(lang="ru")
             contactHref: "https://wa.me/+79048616413",
             contactImg: "whatsapp"
           }
-        ]
-      })(data-visible='true')
-      +my-person-screen({
+      //-   ]
+      //- })(data-visible='true')
+      //- +my-person-screen({
         title:"О себе",
         text: "Закончил Сыктывкарский государственный университет по специальности радиофизика и электроника, там познакомился с программированием. После университета решил углубиться в web разработку.",
         CVHref: 'http://1100120.hostronavt.ru/portfolio/files/%d0%a1%d0%b5%d0%bc%d1%91%d0%bd%d0%be%d0%b2%20%d0%93%d0%b5%d0%be%d1%80%d0%b3%d0%b8%d0%b9%20%d0%a2%d0%b5%d0%bd%d0%b3%d0%b8%d0%b7%d0%be%d0%b2%d0%b8%d1%87%20CV.pdf',
@@ -88,8 +95,9 @@ html(lang="ru")
           }
         ],
         CVbuttonText: "Скачать CV"
-      })
-      +portfolio-screen({
+      //- })
+      +skillsAndServices({})(data-visible='true')
+      //- +portfolio-screen({
         title: 'Портфолио',
         buttons:[
           {
@@ -126,6 +134,6 @@ html(lang="ru")
             mark: 'landing',
           },
         ]
-      })
+      //- })
       //-
         Все иконки были скачаны с ресурса - flaticon.com 
