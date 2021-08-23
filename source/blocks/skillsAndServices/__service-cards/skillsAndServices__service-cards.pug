@@ -6,4 +6,4 @@ mixin skillsAndServices__service-cards(modifier)
       if serviceCard["modification"] == undefined
         - serviceCard["modification"] = "";
       li
-        +service-card(serviceCard)(class=`skillsAndServices__service-cards ${serviceCard.modification}`)
+        +service-card(serviceCard)(class=`skillsAndServices__service-card ${serviceCard.modification}`)

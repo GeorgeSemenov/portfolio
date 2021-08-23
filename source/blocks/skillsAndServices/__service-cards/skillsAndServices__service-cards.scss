@@ -1,1 +1,8 @@
-.skillsAndServices__service-cards {}
+.skillsAndServices__service-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  @media (max-width: $md - 1px){
+    display: block;
+  }
+}

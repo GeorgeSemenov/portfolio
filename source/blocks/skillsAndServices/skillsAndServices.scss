@@ -1,5 +1,10 @@
+@import "../service-card/service-card";
+@import "../skill-card/skill-card";
 @import '__service-card/skillsAndServices__service-card';
 @import '__service-cards/skillsAndServices__service-cards';
 @import '__service-title/skillsAndServices__service-title';
 @import '__services/skillsAndServices__services';
-.skillsAndServices {}
+.skillsAndServices {
+  font-family: 'Montserrat' ,"Arial" , sans-serif;
+  padding: 15px;
+}

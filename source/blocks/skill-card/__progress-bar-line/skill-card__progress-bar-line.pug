@@ -1,0 +1,4 @@
+mixin skill-card__progress-bar-line(modifier)
+  if modifier["radius"] == undefined
+    - modifier["radius"] = "90";
+  circle.skill-card__progress-bar-line(r=modifier.radius cx=modifier.sideLength/2 cy=modifier.sideLength/2 fill="transparent" stroke-dasharray="565.48" stroke-dashoffset="0")&attributes(attributes)

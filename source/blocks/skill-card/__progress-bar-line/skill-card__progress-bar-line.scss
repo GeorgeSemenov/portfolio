@@ -1,0 +1,11 @@
+.skill-card__progress-bar-line {
+  stroke-dashoffset: 0;
+  transition: stroke-dashoffset 1s linear;
+  stroke: $skill-card__progress-bar-line--Stroke;/*Цвет полосы под полосой загрузки*/
+  stroke-width: 1em;
+
+  &_filled{
+    stroke: $skill-card__progress-bar-line_filled--Stroke;
+    stroke-dashoffset: 50;
+  }
+}
