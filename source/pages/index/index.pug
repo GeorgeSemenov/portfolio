@@ -1,9 +1,9 @@
 include ../../blocks/favicon/favicon.pug
 include ../../blocks/navigation/navigation.pug
-include ../../blocks/greetings-screen/greetings-screen.pug
-include ../../blocks/my-person-screen/my-person-screen.pug
+//- include ../../blocks/greetings-screen/greetings-screen.pug
+//- include ../../blocks/my-person-screen/my-person-screen.pug
 include ../../blocks/skillsAndServices/skillsAndServices.pug
-include ../../blocks/portfolio-screen/portfolio-screen.pug
+//- include ../../blocks/portfolio-screen/portfolio-screen.pug
 doctype html
 html(lang="ru")
   head
@@ -45,95 +45,114 @@ html(lang="ru")
       signBolded: "George Semenov"
     })
     main
-      +greetings-screen({
-        title: "Семенов ",
-        titleColored: "Георгий",
-        text: "Начинающий фронтэнд разработчик, верстальщик. Стремящийся  развить свои навыки.",
-        contacts: [
+      //- +greetings-screen({
+      //-   title: "Семенов ",
+      //-   titleColored: "Георгий",
+      //-   text: "Начинающий фронтэнд разработчик, верстальщик. Стремящийся  развить свои навыки.",
+      //-   contacts: [
+      //-     {
+      //-       contactHref: "tel:+79048616413",
+      //-       contactImg: "phone"
+      //-     },
+      //-     {
+      //-       contactHref: "mailto:goshanbosemenov@gmail.com",
+      //-       contactImg: "gmail"
+      //-     },
+      //-     {
+      //-       contactHref: "viber://chat?number=%2B79048616413",
+      //-       contactImg: "viber"
+      //-     },
+      //-     {
+      //-       contactHref: "https://t.me/GoshanboSemenov",
+      //-       contactImg: "telegram"
+      //-     },
+      //-     {
+      //-       contactHref: "https://wa.me/+79048616413",
+      //-       contactImg: "whatsapp"
+      //-     }
+      //-   ]
+      //- })(data-visible='true')
+      //- +my-person-screen({
+      //-   title:"О себе",
+      //-   text: "Закончил Сыктывкарский государственный университет по специальности радиофизика и электроника, там познакомился с программированием. После университета решил углубиться в web разработку.",
+      //-   CVHref: 'http://1100120.hostronavt.ru/portfolio/files/%d0%a1%d0%b5%d0%bc%d1%91%d0%bd%d0%be%d0%b2%20%d0%93%d0%b5%d0%be%d1%80%d0%b3%d0%b8%d0%b9%20%d0%a2%d0%b5%d0%bd%d0%b3%d0%b8%d0%b7%d0%be%d0%b2%d0%b8%d1%87%20CV.pdf',
+      //-   bios:[
+      //-     {
+      //-       bioName:"Дата рождения",
+      //-       bioValue: "01.08.1989",
+      //-     },
+      //-     {
+      //-       bioName:"Адрес",
+      //-       bioValue: "РФ, г.Сыктывкар",
+      //-     },
+      //-     {
+      //-       bioName:"ВУЗ",
+      //-       bioValue: "Сыктывкарский государственный унивеситет",
+      //-     },
+      //-     {
+      //-       bioName:"Знание языков",
+      //-       bioValue: "Английский, на уровне чтения тех. литературы",
+      //-     }
+      //-   ],
+      //-   CVbuttonText: "Скачать CV"
+      //- })
+      +skillsAndServices({
+        title: "Услуги :",
+        serviceCards: [
           {
-            contactHref: "tel:+79048616413",
-            contactImg: "phone"
+            imgName: 'frontEnd', 
+            title:`Frontend разработка` , 
+            description: `Вёрстка сайта и "натягивание" его на одну из самых популярных CMS - Wordpress`
           },
           {
-            contactHref: "mailto:goshanbosemenov@gmail.com",
-            contactImg: "gmail"
+            imgName: 'wordpress', 
+            title:`Wordpress разработка` , 
+            description: `Вёрстка сайта и "натягивание" его на одну из самых популярных CMS - Wordpress`
           },
           {
-            contactHref: "viber://chat?number=%2B79048616413",
-            contactImg: "viber"
-          },
-          {
-            contactHref: "https://t.me/GoshanboSemenov",
-            contactImg: "telegram"
-          },
-          {
-            contactHref: "https://wa.me/+79048616413",
-            contactImg: "whatsapp"
+            imgName: 'wordpress', 
+            title:`Wordpress разработка` , 
+            description: `Вёрстка сайта и "натягивание" его на одну из самых популярных CMS - Wordpress`
           }
         ]
       })(data-visible='true')
-      +my-person-screen({
-        title:"О себе",
-        text: "Закончил Сыктывкарский государственный университет по специальности радиофизика и электроника, там познакомился с программированием. После университета решил углубиться в web разработку.",
-        CVHref: 'http://1100120.hostronavt.ru/portfolio/files/%d0%a1%d0%b5%d0%bc%d1%91%d0%bd%d0%be%d0%b2%20%d0%93%d0%b5%d0%be%d1%80%d0%b3%d0%b8%d0%b9%20%d0%a2%d0%b5%d0%bd%d0%b3%d0%b8%d0%b7%d0%be%d0%b2%d0%b8%d1%87%20CV.pdf',
-        bios:[
-          {
-            bioName:"Дата рождения",
-            bioValue: "01.08.1989",
-          },
-          {
-            bioName:"Адрес",
-            bioValue: "РФ, г.Сыктывкар",
-          },
-          {
-            bioName:"ВУЗ",
-            bioValue: "Сыктывкарский государственный унивеситет",
-          },
-          {
-            bioName:"Знание языков",
-            bioValue: "Английский, на уровне чтения тех. литературы",
-          }
-        ],
-        CVbuttonText: "Скачать CV"
-      })
-      +skillsAndServices({})(data-visible='true')
-      +portfolio-screen({
-        title: 'Портфолио',
-        buttons:[
-          {
-            buttonText:"все",
-            selector: 'all',
-            modifier: "portfolio-screen__button_active"
-          },
-          {
-            buttonText:"многостраничники",
-            selector: 'multyPages'
-          },
-          {
-            buttonText:"лэндинги",
-            selector: 'landing'
-          }
-        ],
-        works:[
-          {
-            exampleSiteHref: "http://1100120.hostronavt.ru/ANKOTest/",
-            exampleGitHref:"https://github.com/GeorgeSemenov/ANKOTest",
-            modifier:"portfolio-screen__example-container_img_ANKOTest",
-            mark: 'landing',
-          },
-          {
-            exampleSiteHref: "http://1100120.hostronavt.ru/afrianska/",
-            exampleGitHref:"https://github.com/GeorgeSemenov/afrianska",
-            modifier:"portfolio-screen__example-container_img_afrianska",
-            mark: 'multyPages',
-          },
-          {
-            exampleSiteHref: "http://1100120.hostronavt.ru/hunger/",
-            exampleGitHref:"https://github.com/GeorgeSemenov/hunger",
-            modifier:"portfolio-screen__example-container_img_hungry-people",
-            mark: 'landing',
-          },
-        ]
-      })
+      //- +portfolio-screen({
+      //-   title: 'Портфолио',
+      //-   buttons:[
+      //-     {
+      //-       buttonText:"все",
+      //-       selector: 'all',
+      //-       modifier: "portfolio-screen__button_active"
+      //-     },
+      //-     {
+      //-       buttonText:"многостраничники",
+      //-       selector: 'multyPages'
+      //-     },
+      //-     {
+      //-       buttonText:"лэндинги",
+      //-       selector: 'landing'
+      //-     }
+      //-   ],
+      //-   works:[
+      //-     {
+      //-       exampleSiteHref: "http://1100120.hostronavt.ru/ANKOTest/",
+      //-       exampleGitHref:"https://github.com/GeorgeSemenov/ANKOTest",
+      //-       modifier:"portfolio-screen__example-container_img_ANKOTest",
+      //-       mark: 'landing',
+      //-     },
+      //-     {
+      //-       exampleSiteHref: "http://1100120.hostronavt.ru/afrianska/",
+      //-       exampleGitHref:"https://github.com/GeorgeSemenov/afrianska",
+      //-       modifier:"portfolio-screen__example-container_img_afrianska",
+      //-       mark: 'multyPages',
+      //-     },
+      //-     {
+      //-       exampleSiteHref: "http://1100120.hostronavt.ru/hunger/",
+      //-       exampleGitHref:"https://github.com/GeorgeSemenov/hunger",
+      //-       modifier:"portfolio-screen__example-container_img_hungry-people",
+      //-       mark: 'landing',
+      //-     },
+      //-   ]
+      //- })
       //-
         Все иконки были скачаны с ресурса - flaticon.com 
