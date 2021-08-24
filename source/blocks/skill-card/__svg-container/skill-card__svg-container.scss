@@ -1,9 +1,11 @@
 .skill-card__svg-container {
+  width: 100%;
   position: relative;
+  margin-bottom: 15px;
   &:before{
     position: absolute;
     content: attr(data-percentage)"%";
     @include centered();
-
+    font-size: 35px;
   }
 }

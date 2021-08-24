@@ -1,6 +1,6 @@
 include ../../blocks/favicon/favicon.pug
 include ../../blocks/navigation/navigation.pug
-//- include ../../blocks/greetings-screen/greetings-screen.pug
+include ../../blocks/greetings-screen/greetings-screen.pug
 //- include ../../blocks/my-person-screen/my-person-screen.pug
 include ../../blocks/skillsAndServices/skillsAndServices.pug
 //- include ../../blocks/portfolio-screen/portfolio-screen.pug
@@ -32,7 +32,8 @@ html(lang="ru")
           itemHref: "#skillsAndServices",
           itemContent: "Навыки и умения",
           imgName: "skillsAndServices",
-          target: "skillsAndServices"
+          target: "skillsAndServices",
+          modifier: "navigation__item_skills-and-services",
         },
         {
           itemHref: "#portfolio",
@@ -45,33 +46,33 @@ html(lang="ru")
       signBolded: "George Semenov"
     })
     main
-      //- +greetings-screen({
-      //-   title: "Семенов ",
-      //-   titleColored: "Георгий",
-      //-   text: "Начинающий фронтэнд разработчик, верстальщик. Стремящийся  развить свои навыки.",
-      //-   contacts: [
-      //-     {
-      //-       contactHref: "tel:+79048616413",
-      //-       contactImg: "phone"
-      //-     },
-      //-     {
-      //-       contactHref: "mailto:goshanbosemenov@gmail.com",
-      //-       contactImg: "gmail"
-      //-     },
-      //-     {
-      //-       contactHref: "viber://chat?number=%2B79048616413",
-      //-       contactImg: "viber"
-      //-     },
-      //-     {
-      //-       contactHref: "https://t.me/GoshanboSemenov",
-      //-       contactImg: "telegram"
-      //-     },
-      //-     {
-      //-       contactHref: "https://wa.me/+79048616413",
-      //-       contactImg: "whatsapp"
-      //-     }
-      //-   ]
-      //- })(data-visible='true')
+      +greetings-screen({
+        title: "Семенов ",
+        titleColored: "Георгий",
+        text: "Начинающий фронтэнд разработчик, верстальщик. Стремящийся  развить свои навыки.",
+        contacts: [
+          {
+            contactHref: "tel:+79048616413",
+            contactImg: "phone"
+          },
+          {
+            contactHref: "mailto:goshanbosemenov@gmail.com",
+            contactImg: "gmail"
+          },
+          {
+            contactHref: "viber://chat?number=%2B79048616413",
+            contactImg: "viber"
+          },
+          {
+            contactHref: "https://t.me/GoshanboSemenov",
+            contactImg: "telegram"
+          },
+          {
+            contactHref: "https://wa.me/+79048616413",
+            contactImg: "whatsapp"
+          }
+        ]
+      })(data-visible='true')
       //- +my-person-screen({
       //-   title:"О себе",
       //-   text: "Закончил Сыктывкарский государственный университет по специальности радиофизика и электроника, там познакомился с программированием. После университета решил углубиться в web разработку.",
@@ -114,8 +115,31 @@ html(lang="ru")
             title:`Поддержка` , 
             description: `Стараюсь оперативно отвечать на сообощения в большинстве популярных мессенджерах, на связи с 8 до 18 часов.`
           }
+        ],
+        skillsTitle: "Навыки :",
+        skillCards: [
+          {
+            title: "HTML5",
+            percentage: 75,
+          },
+          {
+            title: "CSS3",
+            percentage: 70,
+          },
+          {
+            title: "JS",
+            percentage: 63,
+          },
+          {
+            title: "PUG/SCSS",
+            percentage: 86,
+          },
+          {
+            title: "GIT",
+            percentage: 57,
+          },
         ]
-      })(data-visible='true')
+      })
       //- +portfolio-screen({
       //-   title: 'Портфолио',
       //-   buttons:[

@@ -1,0 +1,9 @@
+mixin skillsAndServices__skills-cards(modifier)
+  if (modifier["skillCards"] == undefined)
+    - modifier["skillCards"] = [];
+  ul.skillsAndServices__skills-cards&attributes(attributes)
+    each skillCard in modifier.skillCards
+      if skillCard["modification"] == undefined
+        - skillCard["modification"] = "";
+      li
+        +skill-card(skillCard)(class=`skillsAndServices__skill-card ${skillCard.modification}`)

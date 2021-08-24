@@ -1,1 +1,6 @@
-.skill-card__title {}
+.skill-card__title {
+  color: $skill-card__title--Color;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}

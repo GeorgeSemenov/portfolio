@@ -1,2 +1,4 @@
 mixin skill-card__title(modifier)
-  .skill-card__title&attributes(attributes)
+  if modifier["title"] == undefined
+    - modifier["title"] = "empty__title";
+  h3.skill-card__title&attributes(attributes)!=modifier.title

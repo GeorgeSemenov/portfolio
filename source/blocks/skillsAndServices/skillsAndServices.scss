@@ -1,3 +1,7 @@
+@import '__skills-title/skillsAndServices__skills-title';
+@import '__skill-card/skillsAndServices__skill-card';
+@import '__skills-cards/skillsAndServices__skills-cards';
+@import '__skills/skillsAndServices__skills';
 @import "../service-card/service-card";
 @import "../skill-card/skill-card";
 @import '__service-card/skillsAndServices__service-card';
@@ -6,5 +10,10 @@
 @import '__services/skillsAndServices__services';
 .skillsAndServices {
   font-family: 'Montserrat' ,"Arial" , sans-serif;
-  padding: 15px;
+  @include py(25px);
+  @include px(15px);
+  flex-direction: column;
+  @media (max-width: $md - 1px){
+    padding: 15px;
+  }
 }

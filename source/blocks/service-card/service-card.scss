@@ -8,6 +8,7 @@
   border-radius: 10px;
   text-align: center;
   max-width: 300px;
+  min-height: 365px;
   @include px(15px);
   @include py(40px);
   box-sizing: border-box;
@@ -15,5 +16,6 @@
     display: flex;
     @include py(15px);
     max-width: none;
+    min-height: 0;
   }
 }

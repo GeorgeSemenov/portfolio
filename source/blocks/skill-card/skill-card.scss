@@ -4,4 +4,10 @@
 @import '__progress-bar-container/skill-card__progress-bar-container';
 .skill-card {
   font-family: 'Montserrat' ,"Arial" , sans-serif;
+  width: 120px;
+  text-align: center;
+  box-shadow: 5px 20px 50px rgba(255, 112, 177, 0.2);
+  border-radius: 10px;
+  padding: 15px;
+  background-color: $skill-card--BGColor;
 }
