@@ -1,6 +1,6 @@
 mixin skill-card__progress-bar-container(modifier)
   if modifier["sideLength"] == undefined
     - modifier["sideLength"] = "200";
-  .skill-card__progress-bar-container(width=modifier.sideLength height=modifier.sideLength viewPort="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg")&attributes(attributes)
+  svg.skill-card__progress-bar-container(width=modifier.sideLength height=modifier.sideLength viewPort="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg")&attributes(attributes)
     +skill-card__progress-bar-line(modifier)
-    +skill-card__progress-bar-line(modifier)(class="skill-card__progress-bar-line_filled")
+    +skill-card__progress-bar-line(modifier)(class="skill-card__progress-bar-line_filled" data-percentage=modifier.percentage)

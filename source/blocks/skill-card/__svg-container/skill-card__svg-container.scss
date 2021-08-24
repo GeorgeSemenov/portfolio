@@ -1,5 +1,9 @@
 .skill-card__svg-container {
+  position: relative;
   &:before{
-    content: "loha";
+    position: absolute;
+    content: attr(data-percentage)"%";
+    @include centered();
+
   }
 }
