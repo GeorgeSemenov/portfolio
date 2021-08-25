@@ -1,0 +1,8 @@
+.skills-and-services-screen__skills-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  @media (max-width: $md - 1px){
+
+  }
+}

@@ -1,0 +1,4 @@
+mixin skills-and-services-screen__service-title(modifier)
+  if modifier["serviceTitle"] == undefined
+    - modifier["serviceTitle"] = "empty__serviceTitle";
+  h2.skills-and-services-screen__service-title&attributes(attributes)!=modifier.serviceTitle

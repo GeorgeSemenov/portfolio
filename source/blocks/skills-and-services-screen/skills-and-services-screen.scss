@@ -1,0 +1,22 @@
+@import '__skills-title/skills-and-services-screen__skills-title';
+@import '__skill-card/skills-and-services-screen__skill-card';
+@import '__skills-cards/skills-and-services-screen__skills-cards';
+@import '__skills/skills-and-services-screen__skills';
+@import "../service-card/service-card";
+@import "../skill-card/skill-card";
+@import '__service-card/skills-and-services-screen__service-card';
+@import '__service-cards/skills-and-services-screen__service-cards';
+@import '__service-title/skills-and-services-screen__service-title';
+@import '__services/skills-and-services-screen__services';
+@import '__cv-button/skills-and-services-screen__cv-button';
+.skills-and-services-screen {
+  display: flex;
+  font-family: 'Montserrat' ,"Arial" , sans-serif;
+  @include py(25px);
+  @include px(15px);
+  flex-direction: column;
+  align-items: center;
+  @media (max-width: $md - 1px){
+    padding: 15px;
+  }
+}

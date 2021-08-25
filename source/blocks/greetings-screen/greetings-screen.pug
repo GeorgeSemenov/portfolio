@@ -1,3 +1,4 @@
+include __hidden-main-screen/greetings-screen__hidden-main-screen.pug
 include ../service-card/service-card.pug
 include __contact-img/greetings-screen__contact-img.pug
 include __contact/greetings-screen__contact.pug
@@ -11,6 +12,6 @@ include __img-container/greetings-screen__img-container.pug
 include __content/greetings-screen__content.pug
 mixin greetings-screen(modifier)
   .greetings-screen#greetingsScreen&attributes(attributes)
-    //- +service-card({imgName: 'wordpress', title:`Wordpress разработка` , description: `Вёрстка сайта и "натягивание" его на одну из самых популярных CMS - Wordpress`})
+    +greetings-screen__hidden-main-screen(modifier)
     +greetings-screen__content(modifier)
     

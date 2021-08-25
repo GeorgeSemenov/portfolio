@@ -1,0 +1,13 @@
+.skills-and-services-screen__service-card {
+  margin-bottom: 15px;
+  filter: grayscale(1);
+  opacity: 0.2;
+  transition: filter 1s, opacity 1s;
+  margin-right: 15px;
+  .skills-and-services-screen__service-cards li:last-child &{
+    margin-right:0px;
+  }
+  @media (max-width: $md - 1px){
+    margin-right: 0px;
+  }
+}

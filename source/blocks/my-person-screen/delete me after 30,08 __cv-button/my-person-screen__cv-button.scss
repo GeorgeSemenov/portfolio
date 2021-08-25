@@ -1,0 +1,17 @@
+.my-person-screen__cv-button {
+  color: $my-person-screen__CV-button--Color;
+  background-color: $my-person-screen__CV-button--BGColor;
+  @include py(15px);
+  @include px(10px);
+  min-width: 150px;
+  display: inline-block;
+  text-align: center;
+  -moz-transition: .5s ease-out;
+  -webkit-transition: .5s ease-out;
+  -o-transition: .5s ease-out;
+  transition: .5s ease-out;
+  &:hover{
+    background-color: $my-person-screen__CV-button-hover--BGColor;
+  }
+  &:active{    background-color: darken($my-person-screen__CV-button-hover--BGColor, 15%);  }
+}

@@ -3,5 +3,5 @@ mixin greetings-screen__title(modifier)
     - modifier["title"] = "empty__title";
   if modifier["titleColored"] == undefined
     - modifier["titleColored"] = "";
-  h1.greetings-screen__title&attributes(attributes)!=modifier.title
+  h2.greetings-screen__title&attributes(attributes)!=modifier.title
     span!=modifier.titleColored

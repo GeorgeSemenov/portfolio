@@ -14,7 +14,7 @@ $example-of-work-width: 450px;
 .portfolio-screen {
   min-height: 100vh;
   display: flex;
-  font-family: 'Montserrat' ,"Arial" , "Sans-serif";
+  font-family: 'Montserrat' ,"Arial" , sans-serif;
   justify-content: center;
   color: $portfolio-screen--Color;
   padding-top: 50px;

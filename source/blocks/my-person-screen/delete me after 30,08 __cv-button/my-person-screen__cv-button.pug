@@ -1,0 +1,6 @@
+mixin my-person-screen__cv-button(modifier)
+  if modifier["CVHref"] == undefined
+    - modifier["CVHref"] = "#!";
+  if modifier["CVbuttonText"] == undefined
+    - modifier["CVbuttonText"] = "empty__CVbuttonText";
+  a.my-person-screen__cv-button(href=modifier.CVHref target="_blank")&attributes(attributes)!=modifier.CVbuttonText

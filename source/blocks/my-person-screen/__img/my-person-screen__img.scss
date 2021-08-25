@@ -5,6 +5,9 @@
     margin-bottom: 25px;
     display: flex;
     max-height: 400px;
+    @media (max-width: $lg - 1px){
+      max-height: 330px;
+    }
     @include mx(auto);
     @media (max-width: $md - 1px){
       width: 100%;

@@ -4,6 +4,7 @@
   line-height: 20px;
   b{
     color: $navigation__sign-bolded--Color;
+    display: block;
   }
   @media (max-width: $md - 1px){
     display: none;

@@ -1,3 +1,4 @@
+@import '__hidden-main-screen/greetings-screen__hidden-main-screen';
 @import '../service-card/service-card';
 @import '__contact-img/greetings-screen__contact-img';
 @import '__contact/greetings-screen__contact';
@@ -10,7 +11,7 @@
 @import '__img-container/greetings-screen__img-container';
 @import '__content/greetings-screen__content';
 .greetings-screen {
-  font-family: 'Montserrat' ,"Arial" , "Sans-serif";
+  font-family: 'Montserrat' ,"Arial" , sans-serif;
   position: relative;
   display: flex;
   justify-content: center;

@@ -1,6 +1,7 @@
-mixin my-person-screen__BIO(modifier)
+mixin my-person-screen__bio(modifier)
   if modifier["bios"] == undefined
     - modifier["bios"] = [{bioName:"empty bios array"}];
-  ul.my-person-screen__BIO&attributes(attributes)
+  dl.my-person-screen__bio&attributes(attributes)
     each bioData in modifier.bios
-      +my-person-screen__bio-field(bioData)
+      +my-person-screen__bio-name(bioData)
+      +my-person-screen__bio-value(bioData)

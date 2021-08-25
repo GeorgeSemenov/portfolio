@@ -10,4 +10,7 @@
   border-radius: 10px;
   padding: 15px;
   background-color: $skill-card--BGColor;
+  @media (max-width: $md - 1px){
+    @include px(10px);
+  }
 }

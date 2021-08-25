@@ -1,0 +1,10 @@
+.skills-and-services-screen__skill-card {
+  margin-right: 15px;
+  margin-bottom: 15px;
+  .skills-and-services-screen__service-cards li:last-child &{
+    margin-right:0px;
+  }
+  @media (max-width: $md - 1px){
+    margin-right: 0px;
+  }
+}

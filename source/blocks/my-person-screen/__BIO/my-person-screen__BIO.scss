@@ -1,7 +1,12 @@
-.my-person-screen__BIO {
+.my-person-screen__bio {
   width: 50%;
   flex-shrink: 0;
+  display: grid;
+  grid-template-columns: 150px auto;
+  grid-row-gap: 0px;
+
   @media (max-width: $md - 1px){
+    grid-row-gap: 15px;
     width: 100%;
   }
 }

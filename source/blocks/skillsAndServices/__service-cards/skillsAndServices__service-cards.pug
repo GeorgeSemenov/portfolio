@@ -1,9 +1,0 @@
-mixin skillsAndServices__service-cards(modifier)
-  if modifier["serviceCards"] == undefined
-    - modifier["serviceCards"] = [];
-  ul.skillsAndServices__service-cards&attributes(attributes)
-    each serviceCard in modifier.serviceCards
-      if serviceCard["modification"] == undefined
-        - serviceCard["modification"] = "";
-      li
-        +service-card(serviceCard)(class=`skillsAndServices__service-card ${serviceCard.modification}`)

@@ -1,0 +1,4 @@
+mixin greetings-screen__hidden-main-screen(modifier)
+  if modifier["hiddenSiteTitle"] == undefined
+    - modifier["hiddenSiteTitle"] = "empty__hiddenSiteTitle";
+  h1.greetings-screen__hidden-main-screen&attributes(attributes)!=modifier.hiddenSiteTitle

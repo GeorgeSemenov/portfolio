@@ -1,4 +1,0 @@
-mixin skillsAndServices__service-title(modifier)
-  if modifier["serviceTitle"] == undefined
-    - modifier["serviceTitle"] = "empty__serviceTitle";
-  h2.skillsAndServices__service-title&attributes(attributes)!=modifier.serviceTitle

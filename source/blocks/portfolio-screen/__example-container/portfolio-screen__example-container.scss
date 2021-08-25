@@ -1,13 +1,14 @@
 .portfolio-screen__example-container {
   border-radius: 10px;
   overflow: hidden;
-  width: $example-of-work-width;
-  height: $example-of-work-width*200/340;
+  width: ceil($example-of-work-width);
+  height: ceil($example-of-work-width*200/340);
   margin-left: 10px;
   margin-bottom: 10px;
   position: relative;
   @media (max-width: $xl - 1px){
     @include square(auto);
+    margin-right: 0px;
   }
 
   &:hover{

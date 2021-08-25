@@ -1,0 +1,6 @@
+mixin skills-and-services-screen__cv-button(modifier)
+  if modifier["CVHref"] == undefined
+    - modifier["CVHref"] = "#!";
+  if modifier["CVbuttonText"] == undefined
+    - modifier["CVbuttonText"] = "empty__CVbuttonText";
+  a.skills-and-services-screen__cv-button(href=require('../../files/CV.pdf') target="_blank")&attributes(attributes)!=modifier.CVbuttonText

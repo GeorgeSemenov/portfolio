@@ -1,0 +1,14 @@
+include __skills-title/skills-and-services-screen__skills-title.pug
+include __skills-cards/skills-and-services-screen__skills-cards.pug
+include __skills/skills-and-services-screen__skills.pug
+include ../service-card/service-card.pug
+include ../skill-card/skill-card.pug
+include __service-cards/skills-and-services-screen__service-cards.pug
+include __service-title/skills-and-services-screen__service-title.pug
+include __services/skills-and-services-screen__services.pug
+include __cv-button/skills-and-services-screen__cv-button.pug
+mixin skills-and-services-screen(modifier)
+  .skills-and-services-screen#skillsAndServices&attributes(attributes)
+    +skills-and-services-screen__services(modifier)
+    +skills-and-services-screen__skills(modifier)
+    +skills-and-services-screen__cv-button(modifier)
