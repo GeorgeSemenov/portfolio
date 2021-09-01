@@ -1,6 +1,8 @@
 .my-person-screen__about-me {
   margin-right: 15px;
+  max-width: 360px;
   @media (max-width: $md - 1px){
+    max-width: none;
     margin-bottom: 25px;
     margin-right: 0px;
   }

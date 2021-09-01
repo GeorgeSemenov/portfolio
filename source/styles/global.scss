@@ -17,3 +17,7 @@ body{
   @include mx(auto);
   max-width: 940px;
 }
+
+img{
+  object-fit: contain;
+}
