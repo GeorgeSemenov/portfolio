@@ -1,8 +1,9 @@
+include __pic-wrapper/service-card__pic-wrapper.pug
 include __text-content/service-card__text-content.pug
 include __description/service-card__description.pug
 include __title/service-card__title.pug
 include __pic/service-card__pic.pug
 mixin service-card(modifier)
   .service-card&attributes(attributes)
-    +service-card__pic(modifier)
+    +service-card__pic-wrapper(modifier)
     +service-card__text-content(modifier)
