@@ -140,7 +140,8 @@ html(lang="ru")
             percentage: 57,
           },
         ],
-        CVbuttonText: "Скачать CV"
+        CVbuttonText: "Скачать CV",
+        CVHref: require('../../files/CV.pdf')
       })
       +portfolio-screen({
         title: 'Портфолио',
@@ -161,19 +162,19 @@ html(lang="ru")
         ],
         works:[
           {
-            exampleSiteHref: "http://1100120.hostronavt.ru/ANKOTest/",
+            exampleSiteHref: './sites/anko-test/',
             exampleGitHref:"https://github.com/GeorgeSemenov/ANKOTest",
             modifier:"portfolio-screen__example-container_img_ANKOTest",
             mark: 'landing',
           },
           {
-            exampleSiteHref: "http://1100120.hostronavt.ru/afrianska/",
+            exampleSiteHref: "./sites/afrianska/",
             exampleGitHref:"https://github.com/GeorgeSemenov/afrianska",
             modifier:"portfolio-screen__example-container_img_afrianska",
             mark: 'multyPages',
           },
           {
-            exampleSiteHref: "http://1100120.hostronavt.ru/hunger/",
+            exampleSiteHref: "./sites/hunger/",
             exampleGitHref:"https://github.com/GeorgeSemenov/hunger",
             modifier:"portfolio-screen__example-container_img_hungry-people",
             mark: 'landing',
