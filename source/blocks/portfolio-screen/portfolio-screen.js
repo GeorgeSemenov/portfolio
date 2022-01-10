@@ -8,7 +8,7 @@ $(document).ready(function(){
   }
 
   //Функционал по фильтрации работ
-  $(".portfolio-screen__button").click(filterWork);
+  $(".portfolio-screen__button").click(filterWork);/*При нажатии на клавишу в меню (все, многостраничники, лэндинги ...) выполняется функция filterWork - она определенна ниже*/
 })
 
 //Эти функции нужны для плавного выдвигания фона на примеры работ
@@ -108,11 +108,18 @@ function filterWork(){
       $(works[i]).fadeOut();
     }
   }
-  let selector = $(this).data("selector");
+  let selector = $(this).data("selector");/*Берётся селектор из кнопки в меню, которую нажали*/
   $(this).siblings().removeClass('portfolio-screen__button_active');
   if ($(this).attr('class').indexOf('portfolio-screen__button_active')==-1){
     $(this).addClass("portfolio-screen__button_active");
   }
   if(selector == 'all'){$(`.portfolio-screen__example-container`).fadeIn();}
-  else {$(`.portfolio-screen__example-container[data-mark=${selector}]`).fadeIn();}
+  else{
+    for(i = 0; i< works.length; i++){
+      if($(works[i]).data("mark").indexOf(selector)!=-1){
+        $(works[i]).fadeIn();
+      }
+    }
+  }
+  // else {$(`.portfolio-screen__example-container[data-mark=${selector}]`).fadeIn();}
 }

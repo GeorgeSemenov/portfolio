@@ -1,4 +1,5 @@
 mixin portfolio-screen__example-hrefs(modifier)
   .portfolio-screen__example-hrefs&attributes(attributes)
-    +portfolio-screen__example-git-href(modifier)
+    if (modifier.exampleGitHref!='' && modifier.exampleGitHref!= undefined)
+      +portfolio-screen__example-git-href(modifier)
     +portfolio-screen__example-site-href(modifier)
