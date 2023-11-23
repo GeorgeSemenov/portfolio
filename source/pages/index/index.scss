@@ -2,6 +2,7 @@
 @import "../../styles/allCommonStyles";
 
 /* Стили блоков */
+@import '../../blocks/preloader/preloader';
 @import '../../blocks/navigation/navigation';
 @import '../../blocks/greetings-screen/greetings-screen';
 @import '../../blocks/my-person-screen/my-person-screen';

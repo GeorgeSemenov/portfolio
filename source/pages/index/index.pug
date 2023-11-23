@@ -4,6 +4,7 @@ include ../../blocks/greetings-screen/greetings-screen.pug
 include ../../blocks/my-person-screen/my-person-screen.pug
 include ../../blocks/skills-and-services-screen/skills-and-services-screen.pug
 include ../../blocks/portfolio-screen/portfolio-screen.pug
+include ../../blocks/preloader/preloader.pug
 doctype html
 html(lang="ru")
   head
@@ -13,6 +14,7 @@ html(lang="ru")
     //-В папке build будет лежать файл фавикона, строка которая находится ниже позволит подцепить этот файл
     +favicon()
   body
+    +preloader()
     +navigation({
       items: [
         {
