@@ -1,5 +1,6 @@
 mixin skill-card__svg-container(modifier)
   if modifier["percentage"] == undefined
     - modifier["percentage"] = "0";
-  .skill-card__svg-container(data-percentage=modifier.percentage)&attributes(attributes)
+  .skill-card__svg-container&attributes(attributes)
+    +skill-card__img(modifier)
     +skill-card__progress-bar-container(modifier)

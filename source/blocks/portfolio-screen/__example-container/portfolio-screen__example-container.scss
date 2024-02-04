@@ -5,19 +5,19 @@
   border-radius: 10px;
   overflow: hidden;
   width: ceil($example-of-work-width);
-  height: ceil($example-of-work-width*200/340);
-  margin-left: 10px;
-  margin-bottom: 10px;
+  height: ceil($example-of-work-width * 200/340);
+  margin-left: 20px;
+  margin-bottom: 20px;
   position: relative;
-  @media (max-width: $xl - 1px){
+  @media (max-width: $xl - 1px) {
     @include square(auto);
     margin-right: 0px;
   }
 
-  &:hover{
-    @media (min-width: $xl){
-      .portfolio-screen__example-hrefs{
-        transition: all .25s ease 0s;
+  &:hover {
+    @media (min-width: $xl) {
+      .portfolio-screen__example-hrefs {
+        transition: all 0.25s ease 0s;
       }
     }
   }

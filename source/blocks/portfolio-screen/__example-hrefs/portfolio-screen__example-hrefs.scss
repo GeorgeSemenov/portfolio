@@ -1,23 +1,9 @@
 .portfolio-screen__example-hrefs {
-  background-color: $portfolio-screen__example-hrefs--BGColor;
   width: 100%;
-  height: 100%;
-  position: absolute;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  @media (max-width: $xl - 1px){
-    height: auto;
-    background-color: $transparent;
-    justify-content: space-between;
-    position: relative;
-    top: -30px;
-  }
+  background-color: $transparent;
+  justify-content: space-between;
+  position: relative;
+  top: -30px;
 
-  @media (min-width: $xl){
-    -moz-transition: all .25s ease 0s;
-    -webkit-transition: all .25s ease 0s;
-    -o-transition: all .25s ease 0s;
-    transition: all .25s ease 0s;
-  }
 }

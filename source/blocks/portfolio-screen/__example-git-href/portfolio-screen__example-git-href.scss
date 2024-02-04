@@ -1,7 +1,9 @@
 .portfolio-screen__example-git-href {
-  @include square(100px);
+  width: 100px;
+  height: 100%;
+  padding: 0 15px;
   display: inline-block;
-  svg{
+  svg {
     width: 100%;
     height: 100%;
   }

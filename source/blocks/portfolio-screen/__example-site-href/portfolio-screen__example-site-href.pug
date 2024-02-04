@@ -1,6 +1,0 @@
-include ../../../img/svg/site.pug
-mixin portfolio-screen__example-site-href(modifier)
-  if modifier["exampleSiteHref"] == undefined
-    - modifier["exampleSiteHref"] = "#!";
-  a.portfolio-screen__example-site-href(href=modifier.exampleSiteHref target="blank")&attributes(attributes)
-    +site(modifier)(class="portfolio-screen__example-href-img")

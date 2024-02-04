@@ -1,0 +1,7 @@
+mixin skill-card__img(modifier)
+  if modifier.imgObj === undefined 
+    - modifier.imgObj = {img: require("../../img/skills-icons/emtpy-skill.png")}
+  - var additionalClass = "";
+  if modifier.imgObj.isRound 
+    - additionalClass = "skill-card__img_rounded"
+  img(class = ("skill-card__img " + additionalClass) src=modifier.imgObj.img alt="skill ico")&attributes(attributes)
