@@ -1,0 +1,9 @@
+.portfolio-screen__example-description-button {
+  @include href-button
+  right: 15px;
+  padding-bottom: 5px;
+  @media (max-width: $xl - 1px) {
+    right: 0px;
+    padding-bottom: 0px;
+  }
+}

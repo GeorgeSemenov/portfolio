@@ -5,6 +5,7 @@ $white: #ffffff;
 $black: #000000;
 
 $gray-lightest: rgba(248, 248, 248, 0.2);
+$gray-transparent: rgba(248, 248, 248, 0.7);
 $gray-lighter: #f8f8f8;
 $gray-light: rgba(245, 245, 245, 1);
 $gray: #999;
@@ -41,6 +42,7 @@ $portfolio-screen--Color: $gray-darker;
 $portfolio-screen__title--Color: $black;
 $portfolio-screen__button-hover--Color: darken($gray-darkest,10%);
 $portfolio-screen__button_active--Color : $portfolio-screen__button-hover--Color;
+$portfolio-screen__example-hrefs--BGColor : $gray-transparent;
 $portfolio-screen__example-href-img-hover: $yellow;
 $portfolio-screen__example-description--Color: $gray-darkest;
 

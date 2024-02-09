@@ -12,13 +12,7 @@
   @media (max-width: $xl - 1px) {
     @include square(auto);
     margin-right: 0px;
-  }
-
-  &:hover {
-    @media (min-width: $xl) {
-      .portfolio-screen__example-hrefs {
-        transition: all 0.25s ease 0s;
-      }
-    }
+    overflow: visible;
+    padding-bottom: 50px;
   }
 }

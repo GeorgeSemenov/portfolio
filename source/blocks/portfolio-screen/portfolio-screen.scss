@@ -1,7 +1,21 @@
 $example-of-work-width: 450px;
+@mixin href-button{
+  display: inline-block;
+  position: absolute;
+  bottom: -70px;
+  transition: bottom 0.15s linear;
+  svg {
+    width: 100px;
+    height: 100px;
+  }
+  @media (max-width: $xl - 1px) {
+    bottom: 0;
+  }
+}
+
+@import '__example-description-button/portfolio-screen__example-description-button';
 @import '__example-href-img/portfolio-screen__example-href-img';
 @import '__example-git-href/portfolio-screen__example-git-href';
-@import '__example-hrefs/portfolio-screen__example-hrefs';
 @import '__example-background/portfolio-screen__example-background';
 @import '__example-container/portfolio-screen__example-container';
 @import '__examples-of-work/portfolio-screen__examples-of-work';
@@ -21,3 +35,4 @@ $example-of-work-width: 450px;
     padding-top: 15px;
   }
 }
+
