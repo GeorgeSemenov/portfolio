@@ -1,3 +1,8 @@
+@keyframes pulsating-animation {
+  0% {transform: scale(1);}
+  50% {transform: scale(1.2);}
+  100% {transform: scale(1);}
+}
 .navigation__item {
   position: relative;
   display: inline-block;
@@ -36,5 +41,9 @@
     position: absolute;
     background: $navigation__item--underlineColor;
     bottom: 0;
+  }
+
+  &_pulsating:not(.active){
+    animation: pulsating-animation 1.5s infinite;
   }
 }
