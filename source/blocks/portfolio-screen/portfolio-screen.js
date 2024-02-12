@@ -1,7 +1,9 @@
 const defaultBottom= "-70px";
 const showedBottom = "10px";
 const mobileBottom = "0px";
+import worksDB from "./worksDescriptions.js";
 $(document).ready(function(){
+  console.log(`DB = ${worksDB[0].name}`);
   //функционал для плавного выплывания фона на примерах работ
   elements = $(".portfolio-screen__example-container");
   for(i = 0; i< elements.length; i++){

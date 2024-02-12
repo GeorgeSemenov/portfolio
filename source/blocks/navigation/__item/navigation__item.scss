@@ -3,6 +3,11 @@
   50% {transform: scale(1.2);}
   100% {transform: scale(1);}
 }
+@keyframes pulsating-animation-mobile {
+  0% {transform: scale(1);}
+  50% {transform: scale(1.6);}
+  100% {transform: scale(1);}
+}
 .navigation__item {
   position: relative;
   display: inline-block;
@@ -45,5 +50,8 @@
 
   &_pulsating:not(.active){
     animation: pulsating-animation 1.5s infinite;
+    @media (max-width: $md - 1px) {
+      animation: pulsating-animation-mobile 1.5s infinite;
+    }
   }
 }
