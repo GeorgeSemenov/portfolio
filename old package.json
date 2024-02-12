@@ -1,0 +1,42 @@
+{
+  "name": "Afrianska",
+  "version": "1.0.0",
+  "description": "project for my portfolio",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode=production",
+    "watch": "webpack --watch",
+    "start": "webpack serve --mode=development",
+    "serv": "static build"
+  },
+  "keywords": [],
+  "author": "George Semenov",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^6.7.1",
+    "css-minimizer-webpack-plugin": "^4.0.0",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "image-minimizer-webpack-plugin": "^3.3.0",
+    "imagemin-svgo": "^10.0.1",
+    "imagemin-webpack-plugin": "^2.4.2",
+    "mini-css-extract-plugin": "^2.6.1",
+    "node-sass": "^7.0.1",
+    "pug": "^2.0.4",
+    "pug-html-loader": "^1.1.5",
+    "pug-loader": "^2.4.0",
+    "sass-loader": "^13.0.2",
+    "source-map-loader": "^4.0.0",
+    "style-loader": "^3.3.1",
+    "stylelint": "^14.11.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.10.1",
+    "webpack-merge": "^5.8.0"
+  },
+  "dependencies": {
+    "jquery": "^3.6.1",
+    "jquery-ui": "^1.13.2",
+    "jquery-ui-dist": "^1.13.2",
+    "swiper": "^8.3.2"
+  }
+}

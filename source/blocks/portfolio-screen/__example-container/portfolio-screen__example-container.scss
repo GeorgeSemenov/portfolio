@@ -4,12 +4,12 @@
 .portfolio-screen__example-container {
   border-radius: 10px;
   overflow: hidden;
-  width: ceil($example-of-work-width);
-  height: ceil($example-of-work-width * 200/340);
+  width: calc($example-of-work-width);
+  height: calc($example-of-work-width * 200 / 340);
   margin-left: 20px;
   margin-bottom: 20px;
   position: relative;
-  @media (max-width: $xl - 1px) {
+  @media (max-width: calc($xl - 1px)) {
     @include square(auto);
     margin-right: 0px;
     overflow: visible;

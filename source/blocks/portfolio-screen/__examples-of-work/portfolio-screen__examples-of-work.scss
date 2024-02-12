@@ -2,7 +2,7 @@
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
-  // @media (max-width: $xl - 1px) {
-  //   justify-content: space-around;
-  // }
+  @media (max-width: calc($xl - 1px)) {
+    justify-content: space-around;
+  }
 }

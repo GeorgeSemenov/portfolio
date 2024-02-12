@@ -4,41 +4,41 @@
   width: 100%;
   height: 100%;
   background-size: cover;
-  @media (max-width: $xl - 1px){
-    width: ceil($example-of-work-width*2/3);
-    height: ceil(($example-of-work-width*200/340)*2/3);
+  @media (max-width: calc($xl - 1px)) {
+    width: calc($example-of-work-width * 2 / 3);
+    height: calc(($example-of-work-width * 200 / 340) * 2 / 3);
     border-radius: 10px;
   }
-  @media (min-width: $xl){
-    &:hover{
+  @media (min-width: $xl) {
+    &:hover {
       transform: scale(1.1);
     }
   }
 }
 
-.portfolio-screen__example-container_img_afrianska{
+.portfolio-screen__example-container_img_afrianska {
   .portfolio-screen__example-background {
     background-image: url("../../img/site-img-afrianca.jpg");
   }
 }
-.portfolio-screen__example-container_img_hungry-people{
+.portfolio-screen__example-container_img_hungry-people {
   .portfolio-screen__example-background {
     background-image: url("../../img/site-img-hungry-people.jpg");
   }
 }
-.portfolio-screen__example-container_img_ANKOTest{
+.portfolio-screen__example-container_img_ANKOTest {
   .portfolio-screen__example-background {
     background-image: url("../../img/site-img-electrica.jpg");
   }
 }
 
-.portfolio-screen__example-container_img_films-rect{
+.portfolio-screen__example-container_img_films-rect {
   .portfolio-screen__example-background {
     background-image: url("../../img/site-img-rect-films.jpg");
   }
 }
 
-.portfolio-screen__example-container_img_house-of-the-sites{
+.portfolio-screen__example-container_img_house-of-the-sites {
   .portfolio-screen__example-background {
     background-image: url("../../img/house-of-the-sites.jpg");
   }
